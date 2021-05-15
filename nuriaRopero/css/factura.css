@@ -1,0 +1,21 @@
+*{
+    margin:0px; padding: 0px; box-sizing: border-box;
+}
+#logo {
+    width: 75%; height:auto; margin: 0.1% 12% 0% 12%;
+}
+h1 {
+    text-align: center; font-size: 75%; margin: 0px;
+}
+p {
+    text-align: center; font-size: 65%;
+}
+.especial {
+    font-size: 65%; margin: 0px;
+}
+th, td {
+    text-align: center; font-size: 65%;
+}
+table {
+    width: 90%; margin:0% 5%;
+}

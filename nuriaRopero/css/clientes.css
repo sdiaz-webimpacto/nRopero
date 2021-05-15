@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box; padding: 0%; margin: 0%;
+}
+
+/*-----------------------------------------------------
+-------------------- PARTES ---------------------------
+------------------------------------------------------*/
+
+body {
+    width: 100%; height: 100%; background: linear-gradient(to right, white, #4998a0);
+}
+
+/*-----------------------------------------------------
+-------------------- DIVS -----------------------------
+------------------------------------------------------*/
+
+#cabecera {
+    width: 100vw; height:20vh; background-color:#1a1a18; color:#4998a0;
+}
+#logo {
+    width: auto; height: 100%; float: left;
+}
+#logo img {
+    height: 100%;
+}
+#cliente {
+    width: 55%; float: left; text-align: center; font-size: 75%; margin-top: 4%;
+}
+#salir {
+    width: 5%; margin: 3% 1%; float: right;
+}
+#salir img {
+    width: 100%;
+}
+#bono {
+    width: 10%; height: auto; float: right; font-size: 50%; color: white; margin: 4%; text-align: center;
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------
+-------------------- MOVIL -----------------------------
+------------------------------------------------------*/
+
+@media screen and (max-width: 500px) {
+    #cabecera {
+        width:100vw; height:10vh; background-color:#1a1a18; color:#4998a0;
+    }
+    #cliente {
+        width: 45%; float: left; text-align: center; font-size: 75%; margin-top: 4%;
+    }
+    #bono {
+        width: 10%; height: auto; float: right; font-size: 50%; color: white; margin-top: 4%; text-align: center;
+    }
+}

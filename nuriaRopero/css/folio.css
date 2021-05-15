@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+h1.parrafo {
+    text-align: center;
+}
+.parrafo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1% 2%;
+}
+.respuesta {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 1% 3%; color: grey;
+}
+table td {
+    border:1px solid black;
+}

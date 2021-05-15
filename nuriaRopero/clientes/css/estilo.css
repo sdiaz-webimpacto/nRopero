@@ -1,0 +1,367 @@
+* {
+    list-style: none; text-decoration: none; box-sizing: border-box; margin: 0; padding: 0; overflow: hidden;  
+    font-family: sans-serif;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+.titulo {
+    color: white; font-weight: bold;
+}
+a {
+    color: black;
+}
+#lienzo {
+    width: 80%; height: 78%; border: 2px solid white; border-radius: 16px; margin: 2% 10%; background-color: white;
+    overflow: auto; text-align: center;
+}
+#cuadro {
+    display: none; width: 80%; height: 80%; border: 2px solid white; border-radius: 16px; margin: 2% 10%;
+    background-color: white; overflow: auto; text-align: center;
+}
+#cuadro2 {
+    display: block;
+    width: 80%;
+    height: 80%;
+    border: 2px solid white;
+    border-radius: 16px;
+    margin: 2% 10%;
+    background-color: white;
+    overflow: auto;
+    text-align: center;
+}
+#cuadro3 {
+    display: none;
+    width: 80%;
+    height: 80%;
+    border: 2px solid white;
+    border-radius: 16px;
+    margin: 2% 10%;
+    background-color: white;
+    overflow: auto;
+    text-align: center;
+}
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: #1a1a18;
+}
+main {
+    width: 100%;
+    height: 85vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    background: linear-gradient(to right, #4998a0,white);
+}
+#menu {
+    width: 80%;
+    height: 15vh;
+    float: left;
+    font-weight: bold;
+}
+#menu li {
+    float: left; text-align: center; width: 20%; cursor: pointer; padding: 2%; margin-top: 1%;
+}
+#menu li a {
+    width: 20%;
+    cursor: pointer;
+    padding-top: 8.5%; 
+    margin-top: 2%;
+    border: 3px solid transparent;
+    color: white;
+    background-color: #1a1a18;
+}
+#menu ul li ul li {
+    width: 120%;
+    font-size: 90%;
+    display: block;
+    margin: 1% 30%;
+    text-align:left;
+    z-index: 4;
+}
+#menu ul li ul {
+    display: none;
+    position: absolute;
+}
+#menu ul li:hover > ul {
+    display: block;    
+}
+.form {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 1%;
+    overflow: auto;
+}
+.submit {
+    background-color: #4998a0;
+    color: white;
+    border-radius: 20px;
+    padding: 1%;
+    margin: 1%;
+}
+input, select {
+    border-radius: 12px;
+    padding: 0.5% 1%;
+    text-align: center;
+    size:75%;
+}
+.lista {
+    position: relative;
+    width: 80%;
+    margin: 1% 10%;
+}
+.lista th, .lista-no-opacity th {
+    color: #4998a0;
+    font-weight: bolder;
+}
+.lista td, .lista th {
+    text-align: center;
+    border: 1px solid #4998a0 ;
+    background-color: white;
+    opacity: .7;
+}
+.lista-no-opacity td, .lista-no-opacity th {
+    text-align: center;
+    border: 1px solid #4998a0 ;
+    background-color: white;
+}
+.buscador {
+    width: 30%;
+    height: auto;
+    margin-left: 70%;
+    margin-top: 2%;
+}
+#embarazoForm {
+    position: absolute;
+    padding: 1%;
+    border-radius: 16px;
+    top: 50%;
+    right: 45%;
+    background: linear-gradient(#4998a0,white);
+    box-shadow: 1px 1px 1px black,
+                2px 2px 2px grey,
+                3px 3px 3px brown;
+    z-index: 2;
+}
+.volver {
+    position: relative;
+}
+.volver-fuera {
+    position: absolute; top: 90%; left: 48%;
+}
+#fondo {
+    width: 80%; height: 60vh; margin: 5% 10%; border-radius: 16px; 
+    background: linear-gradient(to right, white, #4998a0);
+}
+#izda {
+    width: 40%;
+    height: 85%;
+    margin-top: 2.5%;
+    text-align: center;
+    float: left;
+    overflow-y: auto;
+}
+#dcha {
+    width: 60%;
+    height: 100%;
+    margin-top: 1%;
+    text-align: center;
+    float: left;
+    overflow: auto;
+}
+.exito {
+    color:white;
+    background-color: green;
+    padding: 1% 2%;
+    border-radius: 16px;
+    width: 50%;
+    height: auto;
+    margin-top: 8%;
+    margin-left: 25%;
+}
+.fracaso {
+    color:white;
+    background-color: red;
+    padding: 1% 2%;
+    border-radius: 16px;
+    width: 50%;
+    height: auto;
+    margin-top: 8%;
+    margin-left: 25%;
+}
+.soloSubmit {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    top:20%;
+    left:10%;
+    z-index: 3;
+    padding: 1%;
+}
+.arribadcha {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    top: 20%;
+    right: 10%;
+    z-index: 3;
+}
+.delete {
+    color:white; background-color: red; border-radius: 35px; padding:2%; width: 2em;
+}
+.delete2 {
+    color:white; background-color:red; border-radius: 35px; padding:2px;
+}
+.clases {
+    width: 19%; height: 20vh; text-align: center; float: left; margin: 0.5%; 
+    border: 1px solid silver; border-radius: 10px; 
+}
+.subclases {
+    width: 19%; 
+    height: 3vh;
+    background-color: #4998a0; 
+    color: white;
+    text-align: center; 
+    float: left; 
+    margin: 0.5%; 
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+.cuarto {
+    float:left;
+    width: 22%;
+    margin: 1%;
+    background-color: white;
+    opacity: 0.7;
+    padding: 1%;
+    text-align: center;
+    border-radius: 16px;
+    cursor: pointer;    
+}
+#apuntados {
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    font-size: 1.25em;
+}
+.submenus {
+    float:left;
+    width: 23%;
+    margin: 1%;
+    background-color: white;
+    opacity: 0.7;
+    padding: 1%;
+    text-align: center;
+    border-radius: 16px;
+    cursor: pointer;  
+}
+.ano {
+    width: 98%;
+    height: 25vh;
+    border-radius: 16px;
+    border: 2px solid gray;
+    background: linear-gradient( to bottom, #4998a0,white);
+    margin: 1%;
+}
+.meses {
+    width: 31%;
+    height: 20vh;
+    border-radius: 16px;
+    border: 2px solid gray;
+    background: linear-gradient( to top, #4998a0,white);
+    margin: 1%;
+    float: left;
+}
+.icono {
+    width:3%;
+}
+#container {
+    background: url('../../img/logo.png');
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+}
+#acceso {
+    background: linear-gradient( to top, #4998a0,white); border: 3px solid #4998a0; border-radius: 16px; opacity: 0.8;
+    position: relative; width: 70%; height: 70%; top: 15%; left: 15%; overflow-y: auto; text-align:center;
+}
+label {
+    cursor: pointer;
+    background-color: #1a1a18;
+    color: white;
+    border-radius:16px;
+    padding: 5px;
+    border: 1px solid gray;    
+}
+.imagen {
+    width: 33%;
+    float:left;
+}
+.formulario input {
+    width: 75%;
+}
+.pie, .pie a {
+    color:blue; font-size:0.9em;
+}
+@media screen and (min-width: 501px) {
+    #logo {
+        width: 20%;
+        height: 15vh;
+        float: left;
+        align-items: center;
+    }
+    #logo img {
+        height: 100%;
+        width: auto;
+    }
+    .lista-no-opacity {
+        width: 90%;
+        height: 70%;
+        margin: 1% 5%
+    }
+    #menu ul li ul li a:hover {
+        color:#4998a0;
+        border-top-color: transparent;
+    }
+    #menu li a:hover{
+        border-top-color: #4998a0;
+        color:#4998a0;
+    }
+    .sexto {
+        margin: 1%; padding: 1%; width: 14%; float: left; border: 1px solid #4998a0; border-radius: 16px;
+        background-color: #1a1a18; color: #4998a0; font-size: 75%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #logo {
+        width: 20%;
+        height: 15vh;
+        float: left;
+    }
+    #logo img {
+        height: auto;
+        width:100%;
+    }
+    .lista-no-opacity {
+        width: 100%;
+        height: 95%;
+    }
+    span {
+        font-size: 50%;
+        width: 20%;
+    }
+    .lista {
+        width: 90%;
+        height: 70%;
+        margin: 1% 5%;
+    }
+    .sexto {
+        margin: 1%; padding: 1%; width: 14%; float: left; border: 1px solid #4998a0; border-radius: 16px;
+        background-color: #1a1a18; color: #4998a0; font-size: 50%;
+    }
+    #opciones {
+        font-size: 75%;
+    }
+}
